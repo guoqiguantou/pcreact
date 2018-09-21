@@ -1,0 +1,15 @@
+/*可以在这里添加你自己的css*/
+p {
+	font-size: 17px;
+    text-align: justify;
+    color: #404040;
+    line-height: 30px;
+    margin-top: .6666666666666666rem;
+    font-weight: 400;
+    word-break: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+p span {font-size:17px !important;}
