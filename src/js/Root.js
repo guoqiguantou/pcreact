@@ -3,13 +3,17 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import App from './components/service/App';
 import Loadable from 'react-loadable';
 import PageLoading from './components/common/PageLoading';
-import {userIsAuthenticated} from "./filter/auth";
 import {Provider} from "react-redux";
 import store from "./store";
 
+//首页
+const Homeindex = Loadable({
+    loader: () => import('./pages/Homeindex'),
+    loading: PageLoading
+});
 
-//hello 测试
-const Hello = Loadable({
+//HelloWorld 测试
+const HelloWorld = Loadable({
     loader: () => import('./pages/HelloWorld'/* webpackChunkName:"HelloWorld" */),
     loading: PageLoading
 });
@@ -25,6 +29,14 @@ const AjaxTest = Loadable({
     loader: () => import('./pages/AjaxTest'),
     loading: PageLoading
 });
+
+//map测试
+const Map = Loadable({
+    loader: () => import('./pages/Map'),
+    loading: PageLoading
+});
+
+
 
 class Root extends React.Component {
     constructor(props) {
@@ -46,9 +58,11 @@ class Root extends React.Component {
         const Manager =({ match }) => (
             <App>
                 <Switch>
-                    <Route exact path={`${match.url}/`} component={Hello}/>
-                    <Route exact path={`${match.url}/a`} component={AjaxTest}/>
-                    <Route exact path={`${match.url}/b`} component={Divs}/>
+                    <Route exact path={`${match.url}/`} component={Homeindex}/>
+                    <Route exact path={`${match.url}/a`} component={HelloWorld}/>
+                    <Route exact path={`${match.url}/b`} component={AjaxTest}/>
+                    <Route exact path={`${match.url}/charts/add`} component={HelloWorld}/>
+                    <Route exact path={`${match.url}/charts/map/aa`} component={Map}/>
                 </Switch>
             </App>
         );
@@ -58,9 +72,7 @@ class Root extends React.Component {
                 <Router>
                     <Switch>
                         <Route path="/manager" component={Manager}/>
-                        <Route exact path="/ajaxTest" component={AjaxTest}/>
                         <Route exact path="/login" component={login}/>
-                        <Route exact path="/hello" component={Hello}/>
                     </Switch>
                 </Router>
             </Provider>

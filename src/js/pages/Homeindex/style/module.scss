@@ -1,0 +1,210 @@
+.boxwarp{
+  height:100%;
+  border:1px solid #E3E5F0;
+  .boxwarpheader{
+    height:39px;
+    background: #F5F6FB;
+    border-bottom:1px solid #E3E5F0;
+    overflow: hidden;
+    p{
+      padding-left: 15px;
+      line-height: 40px;
+      font-size:18px;
+      float:left;
+    }
+    .morebtn{
+      float:right;
+      height:30px;
+      line-height: 30px;
+      margin:5px 0px;
+      margin-right: 10px;
+      border:1px solid #E3E5F0;
+      padding: 0px 10px;
+      color:#9698A4;
+      border-radius: 6px;
+    }
+  }
+  .boxwarpbody{
+    height:300px;
+    .bodyrow{
+      height:300px;
+      .bodybox{
+        height:300px;
+      }
+    }
+  }
+}
+.school{
+  padding:10px;
+  height:300px;
+  .title{
+    height:40px;
+    p{
+      font-size:18px;
+      height:30px;
+      line-height: 30px;
+      float: left;
+      background: #EEF7F9;
+      padding: 0px 10px;
+      border-radius: 5px;
+      color:#444;
+      margin:5px 0px;
+    }
+    &:after{
+      content: '';
+      display: block;
+      width:0px;
+      height:0px;
+      clear: both;
+      overflow: hidden;
+    }
+  }
+  .chartbox{
+    height:240px;
+    padding: 20px 0px;
+  }
+}
+
+.education{
+  padding: 10px;
+  height:300px;
+  .title{
+    height:40px;
+    p{
+      font-size:18px;
+      height:30px;
+      line-height: 30px;
+      float: left;
+      background: #EEF7F9;
+      padding: 0px 10px;
+      border-radius: 5px;
+      color:#444;
+      margin:5px 0px;
+    }
+    &:after{
+      content: '';
+      display: block;
+      width:0px;
+      height:0px;
+      clear: both;
+      overflow: hidden;
+    }
+  }
+  .chartbox{
+      height:240px;
+      :global{
+        .antd-pro-charts--pie-pie .antd-pro-charts--pie-legend{
+          width:100%;
+          margin:0px;
+        }
+        .antd-pro-charts--pie-pie.antd-pro-charts--pie-hasLegend .antd-pro-charts--pie-chart{
+          width:100%;
+          margin:0px;
+        }
+        .antd-pro-charts--pie-value{
+          display: none;
+        }
+        .antd-pro-charts--pie-pie .antd-pro-charts--pie-legend li{
+          width:33.3%;
+          float: left;
+          text-align: center;
+        }
+        .antd-pro-charts--pie-pie .antd-pro-charts--pie-legend{
+            top:inherit;
+            transform:none ;
+        }
+      }
+    }
+
+ }
+.workyear{
+  padding: 10px;
+  height:300px;
+  .title{
+    height:40px;
+    p{
+      font-size:18px;
+      height:30px;
+      line-height: 30px;
+      float: left;
+      background: #EEF7F9;
+      padding: 0px 10px;
+      border-radius: 5px;
+      color:#444;
+      margin:5px 0px;
+    }
+    &:after{
+      content: '';
+      display: block;
+      width:0px;
+      height:0px;
+      clear: both;
+      overflow: hidden;
+    }
+  }
+  .chartbox{
+    height:240px;
+  }
+}
+.infoNotice{
+  height:320px;
+  padding:0px 15px;
+  overflow: hidden;
+  ul{
+    margin:0px;
+    padding: 0px;
+    li{
+      height: 50px;
+      list-style: none;
+      margin:0px;
+      padding: 0px;
+      position: relative;
+      border-bottom: 1px dashed #E3E5F0;
+      a{
+        display: block;
+        width:100%;
+        line-height: 50px;
+        font-size: 18px;
+        color:#aaa;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        padding-left: 15px;
+        transition: all 0.2s;
+        &:before{
+          content: '';
+          width:0px;
+          height:0px;
+          display: block;
+          border:8px solid transparent;
+          border-left:8px solid #E86A63;
+          position:absolute;
+          left:0px;
+          top:11px;
+          transform: rotate(-45deg);
+        }
+        &:hover{
+          background: #eaf1f8;
+        }
+      }
+    }
+  }
+
+}
+.talententry{
+  padding: 10px;
+  height:300px;
+}
+.talentradar{
+  padding: 10px;
+  height:300px;
+  .search{
+    height:40px;
+    padding: 5px 0px;
+  }
+  .chartbox{
+    height:240px;
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "list": [{
+    "id": 1,
+    "openkey":"index",
+    "name": "首页",
+    "url": "",
+    "icontype": "home",
+    "children":[]
+  },{
+    "id": 2,
+    "openkey":"charts",
+    "name": "图表",
+    "url": "charts",
+    "icontype": "fork",
+    "children":[
+      {
+        "id": 21,
+        "openkey":"add",
+        "name": "新建青年之家",
+        "url": "add",
+        "icontype": "",
+        "children":[]
+      },{
+        "id": 22,
+        "openkey":"map",
+        "name": "青年之家地图",
+        "url": "map",
+        "icontype": "",
+        "children":[
+          {
+            "id": 221,
+            "openkey":"aa",
+            "name": "青年之家地图小",
+            "url": "aa",
+            "icontype": "line-chart",
+            "children":[]
+          }
+        ]
+      }
+    ]
+  },{
+    "id": 3,
+    "openkey":"a",
+    "name": "通知公告",
+    "url": "a",
+    "icontype": "line-chart",
+    "children":[]
+  }, {
+    "id": 4,
+    "openkey":"b",
+    "name": "信息管理",
+    "url": "b",
+    "icontype": "usergroup-add",
+    "children":[]
+  }],
+  "success": true
+}

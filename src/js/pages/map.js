@@ -5,7 +5,7 @@ import Map from '../components/common/Map'
 /**
  * 地图
  */
-class HelloWorld extends Component {
+class Maps extends Component {
 
     constructor(props) {
         super(props);
@@ -13,10 +13,10 @@ class HelloWorld extends Component {
 
     render() {
         return (
-            <h3>hello</h3>
-        );
+         <Map/>
+    );
     }
 }
 
 
-export default HelloWorld;
+export default Maps;

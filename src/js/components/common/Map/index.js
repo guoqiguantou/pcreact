@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import '../../../plugin/map'
+import '../../../../plugin/map'
 import styles from './style/index.scss'
 
 /**
@@ -46,7 +46,7 @@ class Map extends Component {
     init() {
         geolocation = new qq.maps.Geolocation();
         geolocation.getIpLocation(this.showPosition, this.showErr);
-        console.log('mapcon', this.mapCon);
+        //console.log('mapcon', this.mapCon);
         this.map = new qq.maps.Map(this.mapCon, {
             // 地图的中心地理坐标。
             center: new qq.maps.LatLng(31.669523, 118.520453)
@@ -76,7 +76,7 @@ class Map extends Component {
                 size = new qq.maps.Size(30, 31),
                 origin = new qq.maps.Point(0, 0),
                 markerIcon = new qq.maps.MarkerImage(
-                    "./images/guohui.png",
+                    "../images/guohui.png",
                     size,
                     origin,
                     anchor

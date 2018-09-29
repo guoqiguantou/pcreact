@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import { Layout, Menu, Icon } from 'antd';
 import { withRouter } from 'react-router';
 import styles from './style/index.scss';
+import CustomIcon from '../../common/CustomIcon'
 import MenuList from "../../common/MenuList";
 const { Header, Sider, Content } = Layout;
 const SubMenu = Menu.SubMenu;
@@ -23,7 +24,8 @@ class App extends React.Component {
         }
     }
     componentDidMount() {
-        console.log('aaa',this.router);
+        //console.log('aaa',this.router);
+        //console.log('this.props.',this.props.children)
     }
     toggle = () => {
         this.setState({
@@ -40,7 +42,9 @@ class App extends React.Component {
                     collapsible
                     collapsed={this.state.collapsed}
                 >
-                    <div className={styles.logo}/>
+                    <div className={styles.logo}>
+                        <CustomIcon path={require('images/logo.svg')} className={styles.img}/>
+                        <h1>Ant Design Pro</h1></div>
                     <MenuList />
                 </Sider>
                 <Layout>

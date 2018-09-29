@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8"/>
     <title>云管理终端</title>
-    <script src="plugin/map/cons.js"></script>
+    <script src="../../../plugin/map/cons.js"></script>
     <script>
         if (!window.Promise) {
             document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' + '>' + '<' + '/' + 'script>');
@@ -13,7 +13,7 @@
         //是否调试
         const __isDebug = false;
         //接口根地址
-        const __apiRoot = 'http://175.6.68.21';
+        const __apiRoot = '';
         //用户令牌本地存储key
         const __authSaveKey = 'LUCK_AUTH_MANAGER';
         //应用id本地存储key
@@ -27,6 +27,6 @@
 
 </head>
 <body>
-<div id="app" style="height: 100%;"></div>
+<div id="app" style="height: 100vh;"></div>
 </body>
 </html>
