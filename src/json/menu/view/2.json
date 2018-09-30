@@ -2,55 +2,53 @@
   "list": [{
     "id": 1,
     "openkey":"index",
-    "name": "首页",
+    "name": "工作台",
     "url": "",
     "icontype": "home",
     "children":[]
   },{
     "id": 2,
-    "openkey":"charts",
-    "name": "图表",
-    "url": "charts",
-    "icontype": "fork",
+    "openkey":"table",
+    "name": "列表页",
+    "url": "table",
+    "icontype": "edit",
+    "children":[]
+  },{
+    "id": 3,
+    "openkey":"map",
+    "name": "地图",
+    "url": "map",
+    "icontype": "line-chart",
+    "children":[]
+  },{
+    "id": 4,
+    "openkey":"form",
+    "name": "表单页",
+    "url": "form",
+    "icontype": "form",
     "children":[
       {
         "id": 21,
-        "openkey":"add",
-        "name": "新建青年之家",
-        "url": "add",
+        "openkey":"forma",
+        "name": "基础表单",
+        "url": "forma",
         "icontype": "",
         "children":[]
       },{
         "id": 22,
-        "openkey":"map",
-        "name": "青年之家地图",
-        "url": "map",
+        "openkey":"formb",
+        "name": "分步表单",
+        "url": "formb",
         "icontype": "",
-        "children":[
-          {
-            "id": 221,
-            "openkey":"aa",
-            "name": "青年之家地图小",
-            "url": "aa",
-            "icontype": "line-chart",
-            "children":[]
-          }
-        ]
+        "children":[]
       }
     ]
-  },{
-    "id": 3,
-    "openkey":"a",
-    "name": "通知公告",
-    "url": "a",
-    "icontype": "line-chart",
-    "children":[]
   }, {
-    "id": 4,
-    "openkey":"b",
-    "name": "信息管理",
-    "url": "b",
-    "icontype": "usergroup-add",
+    "id": 5,
+    "openkey":"404",
+    "name": "404页",
+    "url": "404",
+    "icontype": "warning",
     "children":[]
   }],
   "success": true

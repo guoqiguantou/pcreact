@@ -35,9 +35,25 @@ const Map = Loadable({
     loader: () => import('./pages/Map'),
     loading: PageLoading
 });
-
-
-
+//Table
+const Table = Loadable({
+    loader: () => import('./pages/Table'),
+    loading: PageLoading
+});
+//Forma
+const Forma = Loadable({
+    loader: () => import('./pages/Forma'),
+    loading: PageLoading
+});
+//Formb
+const Formb = Loadable({
+    loader: () => import('./pages/Formb'),
+    loading: PageLoading
+});
+const Tour= Loadable({
+    loader: () => import('./pages/404'),
+    loading: PageLoading
+});
 class Root extends React.Component {
     constructor(props) {
         super(props);
@@ -45,24 +61,21 @@ class Root extends React.Component {
 
     render() {
         //子路由 user
-        const User = ({match}) => (
+        const Forms = ({match}) => (
+
             <div>
-                <Route path={`${match.url}`} component={user}/>
-            </div>
-        );
-        const Divs = ({match}) => (
-            <div>
-                div
+                111111111
             </div>
         );
         const Manager =({ match }) => (
             <App>
                 <Switch>
                     <Route exact path={`${match.url}/`} component={Homeindex}/>
-                    <Route exact path={`${match.url}/a`} component={HelloWorld}/>
-                    <Route exact path={`${match.url}/b`} component={AjaxTest}/>
-                    <Route exact path={`${match.url}/charts/add`} component={HelloWorld}/>
-                    <Route exact path={`${match.url}/charts/map/aa`} component={Map}/>
+                    <Route exact path={`${match.url}/table`} component={Table}/>
+                    <Route exact path={`${match.url}/map`} component={Map}/>
+                    <Route exact path={`${match.url}/form/forma`} component={Forma}/>
+                    <Route exact path={`${match.url}/form/formb`} component={Formb}/>
+                    <Route exact path={`${match.url}/404`} component={Tour}/>
                 </Switch>
             </App>
         );

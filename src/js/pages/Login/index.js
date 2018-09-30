@@ -6,6 +6,10 @@ import {Provider} from "react-redux";
 import store from "./data/store";
 
 class LoginIndex extends Component{
+    constructor(props) {
+        super(props);
+        console.log('Loginthis',this);
+    }
     render (){
         return (
             <Provider store={store}>

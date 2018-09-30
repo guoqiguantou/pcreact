@@ -39,3 +39,28 @@
   font-family: Myriad Pro,Helvetica Neue,Arial,Helvetica,sans-serif;
   font-weight: 600;
 }
+.rightheader{
+  float:right;
+  height:100%;
+  overflow: hidden;
+  padding-right: 15px;
+}
+.mymenu{
+  height:100%;
+  display: block;
+  padding: 0px 20px;
+  cursor: pointer;
+  img{
+    width:24px;
+    height:24px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  span{
+    display: inline-block;
+    line-height: 24px;
+  }
+  &:hover{
+    background: #f6f6f6;
+  }
+}

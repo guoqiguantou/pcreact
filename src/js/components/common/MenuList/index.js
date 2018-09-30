@@ -31,7 +31,7 @@ export default class index extends React.Component {
             this.SelectedKey =surl[2];
         }
 
-
+        console.log('menuthis',this);
     }
 
     loadData = () => {
